@@ -1,7 +1,7 @@
 package koffie;
 
 public class Cup {
-	private static String[] smaken = {"Java","Espresso","Cappucino","Zwart","Verkeerd","Moccha", "Wiener melanche"};
+	private static String[] smaken = {"Java","Espresso","Cappucino","Zwart","Verkeerd","Moccha", "Wiener melange"};
 	private int smaak;
 
 	public Cup(int smaak) {
