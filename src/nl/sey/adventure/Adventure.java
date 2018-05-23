@@ -16,6 +16,10 @@ public class Adventure {
 		return locatie.getNaam();
 	}
 	
+	public Locatie getLocatie() {
+		return locatie;
+	}
+	
 	public String getHelp() {
 		return "Welkom in dit spel!\nSteeds als je op een nieuwe locatie komt, krijg "
 				+ "je een omschrijving van de locatie.\nAls je opnieuw op een locatie komt, "
