@@ -15,10 +15,16 @@ public class AdventereTest {
 	}
 	
 	/* we weten dat je vanuit de startpositie naar o en naar n kan
-	 * -> test dat het aantal richting van de startpositie 2 is
+	 * -> test dat het aantal richtingen van de startpositie 2 is
 	 */
 	public static String testStartRichtingen(Adventure adventure) {
-		return "to do";
+		Locatie start = adventure.getLocatie();
+		int aantalVerbindingen = start.getAantalVerbindingen();
+		if(aantalVerbindingen == 2) {
+			return "succes: start heeft 2 verbindingen";
+		} else {
+			return "MISLUKT: start heeft " + aantalVerbindingen + " verbindingen";
+		}
 	}
 	
 	/* we weten dat dat we vanaf de berg naar z en o kunnen
@@ -34,11 +40,17 @@ public class AdventereTest {
 		}
 	}
 
-	/* we weten dat dat we vanaf de top naar w kunnen
+	/* we weten dat dat we vanaf de top alleen naar w kunnen
 	 * -> test dat we vanaf de berg niet naar noord kunnen
 	 */
 	public static String testTopNietNaarNoord(Adventure adventure) {
-		return "to do";
+		Locatie locatie = Locatie.zoekOpNaam("top");
+		Locatie nieuw = locatie.gaNaar('n');
+		if(nieuw == null) {
+			return "succes: top kan niet niet n";			
+		} else {
+			return "MISLUKT: top kan wel naar n";
+		}
 	}
 
 	public static void main(String[] args) {
