@@ -1,6 +1,6 @@
 package nl.sey.adventure;
 
-public class AdventereTest {
+public class AdventereTestJBF {
 	
 	/* we weten dat het spel begint bij de rivier
 	 * -> test of de start-positie de rivier is
