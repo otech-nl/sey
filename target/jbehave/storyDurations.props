@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Fri May 25 14:11:34 CEST 2018
+nl/sey/adventure/tests/adventure_story.story=0
+threads=1
+total=0
+threadAverage=0
